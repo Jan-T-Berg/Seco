@@ -23,7 +23,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        <header className="bg-yellow-800 text-white p-4 bg-opacity-50 flex items-center justify-between top-0 w-full z-50">
+          <div className="flex items-center"></div>
+          <div
+            className="absolute top-5 left-0 right-0 text-center z-30"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Image src={"/icon.png"} width={80} height={80} alt={""} />
+          </div>
+        </header>
+
+        <div className="z-20">{children}</div>
+      </body>
     </html>
   );
 }

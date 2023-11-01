@@ -1,7 +1,7 @@
-import getUserById from '@/actions/user/getProfile';
+import getUserById from "@/actions/user/getProfile";
 
 export default async function Home() {
   let user = await getUserById(1);
 
-  return <main className=''>{JSON.stringify(user)}</main>;
+  return <main className="w-full flex items-center justify-center">hi</main>;
 }
